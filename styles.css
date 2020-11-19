@@ -48,3 +48,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* -------------------- overall -------------------- */
+/* happyhues.co/palettes/17 */
+body {
+  background: #fef6e4;
+}
+
+
+/* -------------------- board layout -------------------- */
+
+table {
+  position: absolute;
+  top: 20vh;
+  left: calc(50% - 300px); 
+}
+
+td.game-board {
+  width: 200px; 
+  height: 200px;
+  border: 5px solid black; 
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 200px;
+  text-align: center;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+tr td:last-child {
+  border-right: none;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+tr td:first-child {
+  border-left: none;
+}
+
+td.game-board:hover {
+  background-color: #f582ae;
+}
+
+
